@@ -6,9 +6,10 @@ import About from '../components/sections/about';
 import Experience from '../components/sections/experience';
 import Skills from '../components/sections/skills';
 import Portfolio from '../components/sections/portfolio';
+import Contact from '../components/sections/contact';
 export default function Home() {
   return (
-    <div className="container">
+    <div className='container sm:px-0 bg-white dark:bg-black text-stone-900 dark:text-slate-50'>
       <Head>
         <title>Create Next App</title>
       </Head>
@@ -18,13 +19,25 @@ export default function Home() {
         <About />
         <Experience />
         <Skills />
-        <Portfolio/>
+        <Portfolio />
+        <Contact />
       </main>
 
-      <footer className={styles.footer}>
-        <a href="https://next.new" target="_blank" rel="noopener noreferrer">
-          Created with&nbsp;<b>next.new</b>&nbsp;⚡️
-        </a>
+      <footer className='w-full flex items-center justify-center border-b-2 pb-12 pt-0'>
+        <div className='max-w-[50%] px-4 flex items-center justify-between  w-full '>
+          <a href='https://next.new' target='_blank' rel='noopener noreferrer'>
+            Dribble
+          </a>
+          <a href='https://next.new' target='_blank' rel='noopener noreferrer'>
+            Behance
+          </a>
+          <a href='https://next.new' target='_blank' rel='noopener noreferrer'>
+            LinkedIn
+          </a>
+          <a href='https://next.new' target='_blank' rel='noopener noreferrer'>
+            Twitter
+          </a>
+        </div>
       </footer>
     </div>
   );
