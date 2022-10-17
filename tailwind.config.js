@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     maxWidth: {
-      944: '944px',
+      944: '890px',
     },
     container: {
       center: true,
@@ -23,6 +23,8 @@ module.exports = {
         '156': '156px',
         '32': '31%',
         '226':'226px',
+        '90': 'calc(100% - 168px)',
+        
       },
     },
   },
