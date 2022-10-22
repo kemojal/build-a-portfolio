@@ -29,17 +29,15 @@ export default function Experience() {
         <Title title='Experience' />
         <div className='pt-4  w-full flex flex-wrap '>
           {exp.map((item, i) => (
-            <div className="flex w-1/2 ">
-              <div className=" w-16 h-16 rounded-full bg-gray-50 flex items-center justify-center">
-              <Apple
- size="38"
- color="#BF125D"
- variant="Bold"
-/>
+            <div className='flex w-1/2 '>
+              <div className=' w-16 h-16 rounded-full bg-gray-50 flex items-center justify-center'>
+                <Apple size='38' color='#BF125D' variant='Bold' />
               </div>
-              <div className="pl-8 pb-8 pt-4">
-                <h1 className="font-bold">{item.company}</h1>
-                <h3 className="text-gray-500">{item.position + '. ' + item.date}</h3>
+              <div className='pl-8 pb-8 pt-4'>
+                <h1 className='font-bold'>{item.company}</h1>
+                <h3 className='text-gray-500'>
+                  {item.position + '. ' + item.date}
+                </h3>
               </div>
             </div>
           ))}
