@@ -45,7 +45,7 @@ export default function Experience() {
               <div className='pl-8 pb-8 pt-4'>
                 <h1 className='font-bold'>{item.company}</h1>
                 <h3 className='text-gray-500'>
-                  {item.position + '. ' + item.date}coocoococo
+                  {item.position + '. ' + item.date}
                 </h3>
               </div>
             </div>
